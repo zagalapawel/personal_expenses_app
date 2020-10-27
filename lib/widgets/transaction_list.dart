@@ -33,11 +33,12 @@ class TransactionList extends StatelessWidget {
                     '\$' +
                         transactions[index].amount.toStringAsFixed(
                             2), //Can do the same by '\$${tx.amount}'
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: Theme.of(context).primaryColor,
-                    ),
+                    style: Theme.of(context).textTheme.title,
+                    // TextStyle(
+                    //   fontWeight: FontWeight.bold,
+                    //   fontSize: 20,
+                    //   color: Theme.of(context).pri,
+                    // ),
                   ),
                 ),
                 Column(
