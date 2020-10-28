@@ -31,7 +31,7 @@ class Chart extends StatelessWidget {
         'day': DateFormat.E().format(weekDay).substring(0, 1),
         'amount': totalSum,
       }; //DateFormat.E() from package:intl make shortcut of days name
-    });
+    }).reversed.toList();
   }
 
   double get totalSpending {
